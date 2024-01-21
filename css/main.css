@@ -1,0 +1,513 @@
+@font-face {
+  font-family: "Motter-tektura";
+  src: url(/dist/assets/fonts/Motter-Tektura.woff);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+  text-decoration: none;
+}
+
+.white {
+  background-color: white;
+  height: 100px;
+  width: 100%;
+}
+
+header {
+  background-color: #17367B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  position: relative;
+  top: -70px;
+  width: 80%;
+  max-width: 300px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.presentation {
+  background-color: #17367B;
+  margin-top: -50px;
+  text-align: center;
+}
+.presentation h1 {
+  font-family: "Motter-tektura";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.presentation p {
+  font-family: "Teko", sans-serif;
+  font-weight: 100;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu .works, .menu .about, .menu .contacts {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+.menu .works img, .menu .about img, .menu .contacts img {
+  max-width: 100px;
+  height: 150px;
+  margin-top: -50px;
+}
+.menu .works p {
+  color: white;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+}
+.menu .about p {
+  color: white;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+}
+.menu .contacts p {
+  color: white;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+}
+
+.works:hover p {
+  color: #1e439a;
+}
+
+.about:hover p {
+  color: #1e439a;
+}
+
+.contacts:hover p {
+  color: #1e439a;
+}
+
+#project {
+  padding: 50px;
+  background-color: #17367B;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#project h1 {
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+}
+
+.site {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.site p {
+  font-size: 19px;
+  color: white;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}
+.site a {
+  text-align: center;
+}
+.site a img {
+  border-radius: 20px;
+  width: 70%;
+  max-width: 290px;
+  margin-bottom: 20px;
+}
+.site a img:hover {
+  max-width: 293px;
+  transition: 1s;
+  opacity: 0.3s;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  top: 30%;
+}
+
+.side ul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Pixelify Sans", sans-serif;
+  color: rgb(250, 234, 12);
+  list-style: none;
+}
+.side ul li img {
+  max-width: 50px;
+}
+.side ul li img:hover {
+  max-width: 55px;
+  transition: 0.3s;
+}
+
+#about-me {
+  background-color: #19284B;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo img {
+  max-width: 100px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.text-about {
+  font-family: "Teko", sans-serif;
+  color: white;
+  text-align: center;
+  max-width: 60%;
+}
+.text-about p {
+  font-size: 19px;
+}
+.text-about strong:first-of-type {
+  color: rgb(250, 234, 12);
+}
+
+.tools {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-family: "Teko", sans-serif;
+}
+.tools ul {
+  list-style: none;
+}
+.tools img {
+  max-height: 50px;
+}
+.tools img:hover {
+  transition: 0.3s;
+  max-height: 70px;
+}
+
+.passion {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-size: 19px;
+  width: 50%;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  position: relative;
+}
+#contacts h1 {
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Teko", sans-serif;
+  color: white;
+  text-align: center;
+  width: 70%;
+}
+#contacts p {
+  color: white;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  color: white;
+  font-family: "Teko", sans-serif;
+}
+form input {
+  font-family: "Teko", sans-serif;
+  font-weight: 200px;
+  color: #17367B;
+}
+form :-ms-input-placeholder {
+  color: black;
+}
+form textarea {
+  resize: none;
+  height: 300px;
+  font-family: "Teko", sans-serif;
+  font-weight: 200;
+  color: #17367B;
+}
+form button {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  background-color: #19284B;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+form button:hover {
+  background-color: #1e439a;
+}
+
+.cv {
+  position: fixed;
+  top: 200px;
+  right: 30px;
+}
+.cv p {
+  border: solid 1px white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Teko", sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 1px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .links {
+  margin-top: 10px;
+}
+footer .links a {
+  font-size: 25px;
+  color: white;
+}
+footer .links a:hover {
+  opacity: 0.5;
+}
+footer p {
+  font-family: "Teko", sans-serif;
+  color: white;
+}
+
+#cv-page {
+  background-color: rgb(237, 237, 237);
+  text-align: center;
+  font-family: "Teko", sans-serif;
+}
+
+.cv-header {
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cv-header .links a {
+  height: 28px;
+  font-size: 25px;
+  color: #1e439a;
+}
+.cv-header .links a:hover {
+  opacity: 0.5;
+}
+.cv-header .contact-cv {
+  margin-right: 40px;
+}
+.cv-header p:hover {
+  color: rgba(30, 67, 154, 0.6039215686);
+}
+.cv-header h1 {
+  font-weight: bold;
+  color: #1e439a;
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.cv-header h1:hover {
+  color: rgba(30, 67, 154, 0.6039215686);
+}
+
+.cv-title h1 {
+  margin-top: 30px;
+  color: #1e439a;
+  font-family: "Motter-tektura";
+}
+
+.title-cv h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #1e439a;
+}
+
+.title-cv {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  .side {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header video {
+    max-width: 480px;
+  }
+  header .presentation {
+    position: relative;
+    top: 60px;
+  }
+  header .presentation h1 {
+    font-size: 50px;
+  }
+  header .presentation p {
+    font-size: 25px;
+  }
+  header .menu {
+    position: relative;
+    top: 55px;
+  }
+  header .menu .works img {
+    max-width: 128px;
+  }
+  header .menu .about img {
+    max-width: 128px;
+  }
+  header .menu .contacts img {
+    max-width: 128px;
+  }
+  #project {
+    align-items: center;
+  }
+  #project h1 {
+    font-size: 50px;
+  }
+  #project .site {
+    display: flex;
+    flex-direction: row;
+  }
+  #project .site p {
+    font-size: 19px;
+    color: white;
+    font-family: "Teko", sans-serif;
+    width: 300px;
+  }
+  #project .site a img {
+    max-width: 600px;
+  }
+  #project .site a img:hover {
+    max-width: 610px;
+  }
+  #about-me .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #about-me .info .photo img {
+    margin-right: 20px;
+    max-width: 140px;
+  }
+  #about-me .info .text-about {
+    max-width: 50%;
+  }
+  #about-me .tools {
+    margin-top: 30px;
+    text-align: center;
+  }
+  #about-me .tools ul li {
+    display: inline-block;
+    padding: 16px;
+  }
+  #about-me .tools ul li img {
+    max-height: 50px;
+  }
+  #about-me .tools ul li img:hover {
+    max-height: 53px;
+  }
+  #about-me .passion {
+    font-size: 22px;
+  }
+  #contacts h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  #contacts p {
+    font-size: 20px;
+  }
+  #contacts .form-title {
+    margin-bottom: 10px;
+  }
+  #contacts form {
+    display: flex;
+    flex-direction: row;
+  }
+  #contacts form label {
+    color: white;
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  #contacts form input {
+    font-family: "Teko", sans-serif;
+    font-weight: 200px;
+    color: #17367B;
+    height: 30px;
+    margin-right: 20px;
+  }
+  #contacts form :-ms-input-placeholder {
+    color: black;
+  }
+  #contacts form textarea {
+    resize: none;
+    height: 30px;
+    font-family: "Teko", sans-serif;
+    font-weight: 200;
+    color: #17367B;
+  }
+  #contacts form button {
+    font-family: "Teko", sans-serif;
+    font-size: 16px;
+    background-color: #19284B;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 30px;
+  }
+  #contacts form button:hover {
+    background-color: #1e439a;
+  }
+}/*# sourceMappingURL=main.css.map */
